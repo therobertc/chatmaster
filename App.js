@@ -10,11 +10,7 @@ import Groups from './screens/Groups';
 import CreateGroup from './screens/CreateGroup';
 import GroupPage from './screens/GroupPage';
 import CreatePost from './screens/CreatePost';
-//import Post from './screens/Post';
-//import DayTrading from './screens/DayTrading';
-//import PostList from './screens/PostList';
-//import Oversold from './screens/Oversold';
-//import { TouchableOpacity } from 'react-native-gesture-handler';
+import Subscribe from './screens/Subscribe';
 
 
 
@@ -106,7 +102,8 @@ const AppSwitchNavigator = createSwitchNavigator({
   Groups: { screen: Groups },
   CreateGroup: {screen: CreateGroup},
   GroupPage:{screen: GroupPage},
-  CreatePost: {screen: CreatePost}
+  CreatePost: {screen: CreatePost},
+  Subscribe: {screen: Subscribe},
   //Post: {screen: Post},
   //DayTrading: { screen: DayTrading },
 });
@@ -117,11 +114,8 @@ const AppDrawerNavigator = createDrawerNavigator ({
   Groups: Groups,
   'Create Group': CreateGroup,
   GroupPage: GroupPage,
-  CreatePost: CreatePost
-  //"Day Trading": DayTrading,
-  //Post: Post,
-  //"Post List": PostList,
-  //Oversold: Oversold,
+  CreatePost: CreatePost,
+  Subscribe: Subscribe,
 }, {
 
 contentComponent: CustomDrawerComponent,

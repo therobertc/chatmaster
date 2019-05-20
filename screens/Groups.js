@@ -66,13 +66,36 @@ class Groups extends Component {
 
           <View style={{ marginTop: 40, paddingHorizontal: 20 }}>
           <Text style={{ fontSize: 24, fontWeight: '700', color: 'white' }}>
+                  How to Make Money
+              </Text>
+              <Text style={{ fontWeight: '100', marginTop: 10, color: 'white' }}>
+                  A group to chat about making money
+              </Text>
+              <View style={{ width: width - 40, height: 300, marginTop: 20 }}>
+                  <Image
+                      style={{ flex: 1, height: null, width: null, resizeMode: 'cover', borderWidth: 1, borderColor: '#dddddd' }}
+                      source={require('../assets/chatcloud.png')}
+                  />
+                  <Button 
+                        full
+                        //rounded
+                        primary
+                        onPress={()=> this.props.navigation.navigate ('Subscribe')}
+                        >
+                     <Text style = {{ color: 'white', fontWeight: 'bold' }}> Subscribe </Text> 
+                </Button>
+              </View>
+          </View>
+
+          <View style={{ marginTop: 40, paddingHorizontal: 20 }}>
+          <Text style={{ fontSize: 24, fontWeight: '700', color: 'white' }}>
                   Friends Group
               </Text>
               <Text style={{ fontWeight: '100', marginTop: 10, color: 'white' }}>
                   A group to chat with friends
 
               </Text>
-              <View style={{ width: width - 40, height: 300, marginTop: 20 }}>
+              <View style={{ width: width - 40 , height: 300, marginTop: 20 }}>
                   <Image
                       style={{ flex: 1, height: null, width: null, resizeMode: 'cover', borderWidth: 1, borderColor: '#dddddd' }}
                       source={require('../assets/chatcloud.png')}
@@ -106,7 +129,7 @@ class Groups extends Component {
                         primary
                         onPress={()=> this.props.navigation.navigate ('GroupPage')}
                         >
-                     <Text style = {{ color: 'white', fontWeight: 'bold' }}> Join Group </Text> 
+                     <Text style = {{ color: 'white', fontWeight: 'bold' }}> Subscribe </Text> 
                 </Button>
               </View>
           </View>
