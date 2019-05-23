@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <style type="text/css">
+      #icos > div {
+        padding: 50px;
+        border: 3px solid black;
+      }
+      #icos > div > a:link {
+        color: black;
+      }
+      #icos > div > a:hover {
+        color: red;
+      }
+      #icos > div > a:visited {
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="icos"></div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      // var a = "?page=1&page_size=1"
+
+      $.ajax({
+        method: "GET", //optional
+        url: "https://api.trackico.io/v1/icos/all/"
+      }).then(function(data) {
+        for (let i = 0; i <= data.results.length; i++) {
+          var icoInfo = data.results[i];
+          // debugger;
+          var pp = $("<div id='box" + i + "'>");
+          var aEl = $("<a>")
+            .text(" " + icoInfo.title + " ")
+            .attr("href", icoInfo.profile_url);
+          var bEl = $("<p>").text("Rating: " + icoInfo.rating);
+
+          var cEl = $("<p>").text(icoInfo.short_description);
+          $("#icos").append(pp);
+          $("#box" + i).append(aEl, bEl, cEl);
+        }
+        // console.log([icoInfo.title, icoInfo.short_description]);
+        debugger;
+      });
+    </script>
+  </body>
+</html>
