@@ -212,7 +212,7 @@ class Watchlist extends Component {
             <View style={{flex: 2}}>
                 <Header style={{backgroundColor: '#3b5998'}}>
                     <Left>
-                        <Icon style={{color: 'white'}} name="menu" onPress={() => this.props.navigation.openDrawer()}/>
+                    <Icon style={{ color: 'white'}} name="home" onPress={()=> this.props.navigation.navigate('Screener')}/>
                     </Left>
                     <Body>
                     <Text style={{ color: 'white', fontSize: 20, fontWeight: 'bold', width: 150 }}>

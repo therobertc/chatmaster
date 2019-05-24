@@ -22,7 +22,7 @@ class Screener extends Component {
       <View style={styles.container}>
         <Header>
             <Left>
-                <Icon name="menu" onPress={() => this.props.navigation.openDrawer()}/>
+                <Icon name="chatbubbles" onPress={() => this.props.navigation.openDrawer()}/>
             </Left>
 
             <Body>
@@ -151,6 +151,7 @@ class Screener extends Component {
                         full
                         rounded
                         primary
+                        onPress={()=> this.props.navigation.navigate ('Subscribe')}
                         >
                      <Text style = {{ color: 'white', fontWeight: 'bold' }}> Coming Soon </Text> 
                 </Button>
@@ -174,6 +175,7 @@ class Screener extends Component {
                         full
                         rounded
                         primary
+                        onPress={()=> this.props.navigation.navigate ('Subscribe')}
                         >
                      <Text style = {{ color: 'white', fontWeight: 'bold' }}> Coming Soon </Text> 
                 </Button>
@@ -197,6 +199,7 @@ class Screener extends Component {
                         full
                         rounded
                         primary
+                        onPress={()=> this.props.navigation.navigate ('Subscribe')}
                         >
                      <Text style = {{ color: 'white', fontWeight: 'bold' }}> Coming Soon </Text> 
                 </Button>
@@ -220,6 +223,7 @@ class Screener extends Component {
                         full
                         rounded
                         primary
+                        onPress={()=> this.props.navigation.navigate ('Subscribe')}
                         >
                      <Text style = {{ color: 'white', fontWeight: 'bold' }}> Coming Soon </Text> 
                 </Button>
