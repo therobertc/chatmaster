@@ -10,7 +10,7 @@
     "ionicons": "^4.5.8",
     "native-base": "^2.12.1",
     "react": "16.8.3",
-    "react-native": "0.59.8",
+    "react-native": "0.62.3",
     "react-navigation": "^2.18.3"
   },
   "devDependencies": {
